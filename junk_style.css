@@ -1,8 +1,15 @@
-/* Applied to the whole webpage.*/
-.content {
-    font-family: "Lucida Console", "Courier New", monospace;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    box-sizing: border-box;
+    color: #333;
     display: flex;
     flex-flow: column nowrap;
+    min-height: 100vh;
+    /* flex: 1; */
+    font-family: "Lucida Console", "Courier New", monospace;
 }
 
 /******************************** TOP BEGINS ********************************/
@@ -10,198 +17,72 @@
 /* Applied to the top-header section of the page. Creates depth using
  linear-gradient and rounded corners using border-radius for style.*/
 .header {
-    background: linear-gradient(to top, darkgrey,#1F2937 5%);
-    border-radius: 10px;
-}
-
-/* Applied to the top right of the page - The Company Name*/
-.header h4{
-    font-family: "Brush Script MT";
-}
-
-/* Applied to the top portion of the web page. */
-.header, .top{
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    background-color: #1F2937;
-    color: #E5E7EB;
-    font-size: 18px;
+    justify-content: end;
+    align-items: center;
+    background: linear-gradient(#1f2937b7,#1f2937);
 }
 
-/* Applied to the unordered list on the header-top portion of the webpage. */
 .header ul{
     display: flex;
     flex-flow: row nowrap;
+    margin-right: 20px;
     gap: 25px;
     list-style: none;
 }
 
-/* Applied to the Design Logo in the top right poriton of the webpage*/
-h4 {
-    font-weight: 800;
-    font-size: 24px;
-    color: #F9FAF8;    
-    margin-top: 10px;
-    margin-left: px;
-    margin-bottom: 7px;
-    align-self: center;
-    justify-self: center;
-}
-
-.header {
-    justify-content: center;
-}
-
-.header-box {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content:space-between;
-    align-items: center;
-    width: 900px;
-}
-
-/* Applied to the Content portion of the Top section of the webpage (next to the Leading Image)*/
-h3 {
-    font-weight: 800;
-    font-size: 48px;
-    color: #F9FAF8;
-    margin-top:0;
-    margin-bottom:-15px;
-}
-
-.top-content button{
-    display:flex;
-    margin-top: -10px;
-    padding-top: 0px;
-    width: 70px;
-    background-color: #3882F6;
-    color:white;
+.header ul a{
+    border-radius: 5px;
+    padding: 3px 5px;
     
-    flex-basis: 0;
-}
-
-.top img{
-    width:500px;
-    height: 200px;
+    color: white;
+    text-decoration: none;
 }
 
 .top-content{
     display: flex;
-    flex-flow: column nowrap; 
-}
-
-.top-box {
-    display: flex;
     flex-flow: row nowrap;
-    width: 900px;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex: 1;
+
+    padding: 50px;
 }
 
-.top {
-    padding-bottom: 80px;
+.top-content ul {
+    display: flex;
+    flex-flow: column nowrap;
+    list-style: none;
+    gap: 10px;
+    font-size: 40px;
+    font-weight: 900;
 }
 /************************ TOP ENDS ***********************************/
 
-
 /************************* MIDDLE BEGINS *******************************/
-
 .middle {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-}
-
-.middle-top {
-    padding-bottom: 100px;
-}
-
-.middle-top h5 {
-    font-size: 36px;
-    font-weight: 800;
-    color: #1F2937;
-    text-align: center;
-}
-
-.middle-top ul {
-    display: flex;
-    flex-flow: row nowrap;
-    list-style: none;
-    gap: 2px;
-    padding: 0px;
-    width: 900px;
-    margin: 0px;
-    justify-content: space-evenly;
-
-}
-
-.middle-top ul li {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    gap: 10px;
-}
-
-.middle-top li img{
-    width: 100px;
-    height: 100px;
-}
-
-/* Quote section */
-.middle-middle {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
     background-color: #E5E7EB;
-    width: 100%;
-    padding: 50px;
-}
-
-.middle-middle-box {
-    font-size: 36px;
-    color:#1F2937;
+    
+    font-size: 26px;
     font-style:italic;
-    width: 900px;
-}
+    text-align: center;
+    flex: 1;
 
-.middle-middle-box #quote-source {
-    display: flex;
-    font-weight:900;
-    justify-content: flex-end;
-    padding-right: 50px;
-}
-
-.info-box {
-    display: flex;
-    flex-flow: row nowrap;
-    width:900px;
-    background-color: #3882F6;
-    padding: 30px;
-    margin: 80px;
-    justify-content: space-evenly;
-    color: white;
-}
-
-.info-box button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 20px;
-    margin: 30px;
-}
-
-#bottom-words-header {
-    display: flex;
-    margin-bottom: -10px;
-    font-weight: 900;
-    font-size: 25px;
+    padding: 0% 3% 0% 3%;
 }
 /************************* MIDDLE ENDS *********************************/
 
 /************************ BOTTOM BEGINS ********************************/
 .footer {
+    display: flex;
     background-color: #1F2937;
     color: white;
     text-align: center;
+    justify-content: center;
 }
 /************************* BOTTOM ENDS *********************************/
