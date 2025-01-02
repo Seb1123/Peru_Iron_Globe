@@ -1,0 +1,130 @@
+/* * {
+    padding: 0px;
+    margin: 0px;
+} */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    text-align: center;
+    font-family: "Lucida Console", "Courier New", monospace;
+  }
+
+img {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background: linear-gradient(#1f2937b7,#1f2937);
+    /* padding: 15px;
+    margin-bottom: 20px; */
+}
+
+.header ul{
+    display: flex;
+    flex-flow: row nowrap;
+    margin-right: 20px;
+    gap: 25px;
+    list-style: none;
+}
+
+.header ul a{
+    border-radius: 5px;
+    padding: 3px 5px;
+    
+    color: white;
+    text-decoration: none;
+}
+
+.mexico {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 25px;
+    margin-bottom: 100px;
+}
+
+#port {
+    width: 800px;
+}
+
+.carousel {
+    position: relative;
+    width: 80%;
+    margin: 50px auto;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+  }
+
+  .carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .carousel-slide {
+    min-width: 100%;
+    height: 300px;
+  }
+
+  /* Example images */
+  .slide-1 { background: url('./images/Operations/iron_globe_intro.jpg') center/cover no-repeat; }
+  .slide-2 { background: url('./images/Operations/iron_globe_intro.jpg') center/cover no-repeat; }
+  .slide-3 { background: url('./images/Operations/iron_globe_intro.jpg') center/cover no-repeat; }
+  .slide-4 { background: url('https://via.placeholder.com/800x300?text=Slide+4') center/cover no-repeat; }
+  .slide-5 { background: url('https://via.placeholder.com/800x300?text=Slide+5') center/cover no-repeat; }
+  .slide-6 { background: url('https://via.placeholder.com/800x300?text=Slide+6') center/cover no-repeat; }
+
+  /* Radio buttons for navigation */
+  input[type="radio"] {
+    display: none;
+  }
+
+  /* Slide positioning */
+  #slide1:checked ~ .carousel-inner {
+    transform: translateX(0%);
+  }
+  #slide2:checked ~ .carousel-inner {
+    transform: translateX(-100%);
+  }
+  #slide3:checked ~ .carousel-inner {
+    transform: translateX(-200%);
+  }
+  #slide4:checked ~ .carousel-inner {
+    transform: translateX(-300%);
+  }
+  #slide5:checked ~ .carousel-inner {
+    transform: translateX(-400%);
+  }
+  #slide6:checked ~ .carousel-inner {
+    transform: translateX(-500%);
+  }
+
+  /* Navigation dots */
+  .carousel-nav {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+  }
+
+  .carousel-dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  input[type="radio"]:checked + .carousel-dot {
+    background-color: #0073e6;
+  }
